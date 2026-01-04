@@ -94,7 +94,11 @@ function generateComics(dialog_text1, dialog_text2, dialog_text3)
     left: "-80",
     height: "120",
     image: imgUrl + 'chat_left.svg',
-    text: dialog_text1 }))),
+    text: dialog_text1 })),
+  React.createElement(Character, {
+    image: imgUrl + 'char2.png',
+    left: "10",
+    scale: "0.55" }))),
 
 
 
@@ -108,7 +112,11 @@ function generateComics(dialog_text1, dialog_text2, dialog_text3)
     left: "60",
     bottom: "-110",
     image: imgUrl + 'chat_right.svg',
-    text: dialog_text2 }))),
+    text: dialog_text2 })),
+  React.createElement(Character, {
+    image: imgUrl + 'char1.png',
+    left: "-10",
+    scale: "0.5" }))),
 
 
     React.createElement(Panel, null,
@@ -121,7 +129,21 @@ function generateComics(dialog_text1, dialog_text2, dialog_text3)
     left: "60",
     bottom: "-110",
     image: imgUrl + 'chat_right.svg',
-    text: dialog_text3 }))),
+    text: dialog_text3 })),
+  React.createElement(Character, {
+    image: imgUrl + 'char1.png',
+    left: "0",
+    scale: "0.5" }))),
+
+  React.createElement(Panel, null,
+  React.createElement(Character, {
+    image: imgUrl + 'char1.png',
+    left: "60",
+    scale: "0.6" }),
+  React.createElement(Character, {
+    image: imgUrl + 'char2.png',
+    left: "0",
+    scale: "0.6" }))),
 
 
 
